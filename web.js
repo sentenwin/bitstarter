@@ -3,8 +3,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('<html><head><title>Senthils App</title></head>');
-  response.send('<body><h1>Hello Senthil heroku app</h1></body></html>');
+  response.send('Hello Senthil');
 });
 
 var port = process.env.PORT || 5000;
